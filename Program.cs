@@ -38,6 +38,12 @@ namespace XTEA__Algorithm
             UInt32 testFirstEncode = v0; 
             UInt32 testsecondEncode = v1;
 
+            var firstOutput = BitConverter.GetBytes(testFirstEncode);
+            var SecondOutput = BitConverter.GetBytes(testsecondEncode);
+
+            Console.WriteLine(BitConverter.ToString(firstOutput));
+            Console.WriteLine(BitConverter.ToString(SecondOutput));
+
             Decode(v0,v1);
 
         }
